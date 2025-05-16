@@ -32,14 +32,21 @@ export default function Team() {
                 <Text>thompma8@oregonstate.edu</Text>
             </Box>
             <Box bg="lightgray" p={2} borderRadius="sm" color="black">
+                <Heading size="md" mb={2}>Dr. Clotilde Pierson </Heading>
+                <Text>clotilde.pierson@oregonstate.edu</Text>
+                <Text>Assistant Professor of Architectural Engineering in the School of Civil/Construction Engineering</Text>
+                <Button mt={2} bg="#D73F09" color="white" _hover={{ bg: 'darkgray' }} onClick={() => window.open('https://www.clotildepierson.com/', '_blank')}>
+                    Website
+                </Button>
+                
+            </Box>
+            <Box bg="lightgray" p={2} borderRadius="sm" color="black">
                 <Heading size="md" mb={2}>Alexander Ubrich</Heading>
                 <Text>alexander.ulbrich@oregonstate.edu</Text>
                 <Text>Instructor in the School Electrical Engineering/Computer Science</Text>
-            </Box>
-            <Box bg="lightgray" p={2} borderRadius="sm" color="black">
-                <Heading size="md" mb={2}>Clotilde Pierson</Heading>
-                <Text>clotilde.pierson@oregonstate.edu</Text>
-                <Text>Assistant Professor of Architectural Engineering in the School of Civil/Construction Engineering</Text>
+                <Button mt={2} bg="#D73F09" color="white" _hover={{ bg: 'darkgray' }} onClick={() => window.open('https://www.alexulbrich.com/', '_blank')}>
+                    Website
+                </Button>
             </Box>
         </VStack>
     );
