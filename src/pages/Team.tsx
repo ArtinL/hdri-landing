@@ -48,6 +48,17 @@ export default function Team() {
                     Website
                 </Button>
             </Box>
+            <Box bg="lightgray" p={2} pt={8} borderRadius="sm" color="black">
+                <Heading size="md" mb={2}>Previous Contributors</Heading>
+                <Heading size="sm" mt={2}>2022-2023 Development Team</Heading>
+                <Text>Xiangyu &quot;Joey&quot; Li</Text>
+                <Text>Liam Zimmermann</Text>
+                <Text>Nathaniel Klump</Text>
+                <Heading size="sm" mt={2}>2023-2024 Development Team</Heading>
+                <Text>Jacob Springer</Text>
+                <Text>Liam Zimmermann</Text>
+                <Text>Shanti Morrell</Text>
+            </Box>
         </VStack>
     );
 }
