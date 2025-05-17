@@ -5,6 +5,7 @@ import Technical from './pages/Technical';
 import Team from './pages/Team';
 import DefaultPage from './pages/DefaultPage';
 import Quickstart from './pages/quickstart';
+import VisualElements from './pages/visualelements';
 import './index.css';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="technical" element={<Technical />} />
           <Route path="team" element={<Team />} />
           <Route path="quickstart" element={<Quickstart />} />
+          <Route path="visualelements" element={<VisualElements/>} />
         </Route>
       </Routes>
     </Router>

@@ -25,6 +25,9 @@ export default function NavBar() {
           <ChakraLink as={Link} to="/quickstart" fontWeight="bold" color="white" _hover={{ color: 'lightgray' }}>
             Quick Start
           </ChakraLink>
+          <ChakraLink as={Link} to="/visualelements" fontWeight="bold" color="white" _hover={{ color: 'lightgray' }}>
+            Visual Elements
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>
