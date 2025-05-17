@@ -13,7 +13,7 @@ export default function Technical() {
       </Box>
       
       {/* Frontend */}
-      <Box bg="white" p={8} borderRadius="lg" boxShadow="xl" maxW="900px" mx="auto">
+      <Box bg="white" p={8} borderRadius="lg" boxShadow="xl" mx="auto">
         <Heading size="lg" mb={6} textAlign="left">
           Frontend
         </Heading>
