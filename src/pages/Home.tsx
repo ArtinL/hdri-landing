@@ -4,12 +4,13 @@ import bruh from "../assets/bruh.jpeg";
 export default function Home() {
   return (
     <VStack spacing={8} align="stretch" p={8} bg="lightgray" minH="100vh">
-      <Box bg="#303030" p={6} borderRadius="md" color="white">
-        <Heading mb={4}>Welcome to the HDRI Calibration Interface, your tool for simplifying glare analysis.</Heading>
-      </Box>
-      <Box><Image src={bruh} alt="HDRI Logo" /></Box>
-      <Box bg="lightgray" p={6} borderRadius="md" color="black">
-        <Heading size="lg" mb={4}>The Problem</Heading>
+      <VStack bg="#303030" p={5} borderRadius="md" color="white" justifyContent="center" alignItems="center" display="flex">
+        <Heading mb={4}>Welcome to the HDRI Calibration Interface</Heading>
+        <Text fontSize={20}>Your tool for simplifying glare analysis.</Text>
+      </VStack>
+      <Box justifyContent="center" alignItems="center" display="flex"><Image src={bruh} alt="HDRI Logo" /></Box>
+      <Box bg="lightgray" p={5} borderRadius="md" color="black">
+        <Heading size="lg" mb={4} justifyContent="center" alignItems="center" display="flex">The Problem</Heading>
         <Text>
           Finding ways to include sources of natural light in any indoor space can have a multitude of benefits,
           such as elevating the productivity, energy, and overall mood of its inhabitants. However, it can also
@@ -25,8 +26,8 @@ export default function Home() {
           proving to be both time consuming and frustrating.
         </Text>
       </Box>
-      <Box bg="lightgray" p={6} borderRadius="md" color="black">
-        <Heading size="lg" mb={4}>Our Solution</Heading>
+      <Box bg="lightgray" p={5} borderRadius="md" color="black">
+        <Heading size="lg" mb={4} justifyContent="center" alignItems="center" display="flex">Our Solution</Heading>
         <Text>
           The HDRI Calibration Tool is a desktop application that automates the High Dynamic Range Imaging technique. We've built upon
           the work of previous development teams to expand upon existing capabilities, as well as introduce some new ones. This includes: a way to 
@@ -34,8 +35,10 @@ export default function Home() {
           HDR image, displaying the resulting HDR image immediately upon its generation, and a total overhaul of the application's UI to 
           further improve its navigability and ease of use. 
         </Text>
-        <Button mt={4} bg="#D73F09" color="white" _hover={{ bg: 'darkgray' }}>
-          Learn More
+      </Box>
+      <Box bg="lightgray" borderRadius="md" justifyContent="center" alignItems="center" display="flex">
+        <Button mt={4} bg="#D73F09" color="white" _hover={{ bg: 'darkgray' }} onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}>
+          Repository
         </Button>
       </Box>
     </VStack>
