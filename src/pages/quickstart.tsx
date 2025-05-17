@@ -74,7 +74,7 @@ export default function Home() {
         <Heading size="md" mb={4}>Generate HDR Image</Heading>
         <List spacing={2} pl={4}>
           <ListItem>Close <Text as="span" fontWeight="bold">Settings</Text>.</ListItem>
-          <ListItem>Click <Text as="span" fontWeight="bold">Generate HDR Image</Text> in the sidebar.</ListItem>
+          <ListItem>Click <Text as="span" fontWeight="bold">Generate HDR Image</Text> on the bottom.</ListItem>
           <ListItem>Monitor progress or resolve any error messages.</ListItem>
         </List>
       </Box>
