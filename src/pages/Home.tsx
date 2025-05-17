@@ -1,5 +1,5 @@
 import { Box, Heading, Text, VStack, Button, Image } from '@chakra-ui/react';
-import bruh from "../../assets/bruh.jpeg";
+import bruh from "../assets/bruh.jpeg";
 
 export default function Home() {
   return (
