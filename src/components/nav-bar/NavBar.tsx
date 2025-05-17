@@ -22,6 +22,9 @@ export default function NavBar() {
           <ChakraLink as={Link} to="/team" fontWeight="bold" color="white" _hover={{ color: 'lightgray' }}>
             Team
           </ChakraLink>
+          <ChakraLink as={Link} to="/quickstart" fontWeight="bold" color="white" _hover={{ color: 'lightgray' }}>
+            Quick Start
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>
