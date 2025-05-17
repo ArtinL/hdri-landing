@@ -6,14 +6,14 @@ export default function Home() {
     <VStack spacing={8} align="stretch" p={8} bg="lightgray" minH="100vh">
       <Box bg="#303030" p={6} borderRadius="md" color="white">
         <Heading mb={4}>Welcome to the HDRI Calibration Interface, your tool for simplifying glare analysis.</Heading>
-        <Image src={bruh} alt="HDRI Logo" />
       </Box>
+      <Box><Image src={bruh} alt="HDRI Logo" /></Box>
       <Box bg="lightgray" p={6} borderRadius="md" color="black">
         <Heading size="lg" mb={4}>The Problem</Heading>
         <Text>
           Finding ways to include sources of natural light in any indoor space can have a multitude of benefits,
           such as elevating the productivity, energy, and overall mood of its inhabitants. However, it can also
-          run the risk of introducing visual discomfort, specifically glare, at certain times of day.
+          run the risk of introducing visual discomfort, specifically glare, at certain times of day. {'\n'}
         </Text>
         <Text>
           Inorder to identify and quantify sources of glare in indoor settings, architectural lighting designers and
