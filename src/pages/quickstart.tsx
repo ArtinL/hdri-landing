@@ -10,19 +10,6 @@ export default function Home() {
         <Text fontSize="lg">Streamlined HDR image generation with Radiance tools</Text>
       </VStack>
 
-            {/* Repository Button */}
-      <Box textAlign="center">
-        <Button
-          size="lg"
-          bg="#D73F09"
-          color="white"
-          _hover={{ bg: "darkgray" }}
-          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}
-        >
-          View Repository
-        </Button>
-      </Box>
-
       {/* Install Dependencies */}
       <Box bg="white" p={6} borderRadius="md" boxShadow="md">
         <Heading size="md" mb={4}>Install Dependencies</Heading>
@@ -79,6 +66,18 @@ export default function Home() {
         </List>
       </Box>
 
+      {/* Repository Button */}
+      <Box textAlign="center">
+        <Button
+          size="lg"
+          bg="#D73F09"
+          color="white"
+          _hover={{ bg: "darkgray" }}
+          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}
+        >
+          View Repository
+        </Button>
+      </Box>
 
     </VStack>
   );
