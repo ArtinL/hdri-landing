@@ -77,6 +77,8 @@ export default function Technical() {
             mb={6}
           />
         </Center>
+      </Box>
+      <Box bg="white" p={8} borderRadius="md" boxShadow="md">
         {/* Backend */}
         <Heading size="lg" mb={4}>Backend</Heading>
         <Text mb={6} lineHeight="tall">
@@ -91,6 +93,8 @@ export default function Technical() {
           with preset command line options, to execute the stage and receive an output file. Each output file is piped into the subsequent stages until the HDRI is generated. It's these commands that are overwritten if the user has
           toggled "advanced" mode and supplied their own commands.
         </Text>
+      </Box>
+      <Box bg="white" p={8} borderRadius="md" boxShadow="md">
         {/* Integration */}
         <Heading size="lg" mb={4}>Integration</Heading>
         <Text>

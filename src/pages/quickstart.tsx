@@ -75,19 +75,6 @@ export default function Home() {
         </List>
       </Box>
 
-      {/* Repository Button */}
-      <Box textAlign="center">
-        <Button
-          size="lg"
-          bg="#D73F09"
-          color="white"
-          _hover={{ bg: "darkgray" }}
-          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}
-        >
-          View Repository
-        </Button>
-      </Box>
-
     </VStack>
   );
 }
