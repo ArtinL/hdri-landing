@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, Button, Image } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, Button, Image, Center } from '@chakra-ui/react';
 import bruh from "../assets/bruh.jpeg";
 
 export default function Home() {
@@ -6,22 +6,34 @@ export default function Home() {
     <VStack spacing={8} align="stretch" p={8} bg="lightgray" minH="100vh">
       {/* Header */}
       <VStack bg="#303030" p={6} borderRadius="md" color="white" textAlign="center">
-        <Image src={bruh} alt="HDRI Logo" boxSize="400px" />
         <Heading>HDRI Calibration Interface</Heading>
         <Text fontSize="lg">Streamlined HDR image generation with Radiance tools</Text>
       </VStack>
 
-      {/* Repository Button */}
-      <Box textAlign="center">
-        <Button
-          size="lg"
-          bg="#D73F09"
-          color="white"
-          _hover={{ bg: "darkgray" }}
-          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}
-        >
-          View Repository
-        </Button>
+      {/* Get Started Button */}
+      <Box bg="white" p={8} borderRadius="md" boxShadow="md">
+        <Box display="flex" flexDirection={{ base: "column", md: "row" }} alignItems="center">
+          <Box flex="1" pr={{ base: 0, md: 6 }} mb={{ base: 6, md: 0 }}>
+            <Image src={bruh} alt="HDRI Logo" maxW="100%" height="auto" />
+          </Box>
+          <Box flex="1" textAlign={{ base: "center", md: "left" }}>
+            <Heading size="lg" mb={4}>HDRI Calibration Tool</Heading>
+            <Text fontSize="md" mb={6}>
+              A desktop application that simplifies the process of creating High Dynamic Range Images
+              for architectural analysis. Automatically generate HDR images and luminance maps with
+              an intuitive, user-friendly interface.
+            </Text>
+            <Button
+              size="lg"
+              bg="#D73F09"
+              color="white"
+              _hover={{ bg: "darkgray" }}
+              onClick={() => window.location.href = '/quickstart'}
+            >
+              Get Started
+            </Button>
+          </Box>
+        </Box>
       </Box>
 
       {/* The Problem Section */}
@@ -52,6 +64,15 @@ export default function Home() {
           This includes: interactively deriving lens measurements in pixels from an image, generating the corresponding luminance map of the resulting
           HDR image, displaying the HDR image immediately upon generation, and a complete overhaul of the application's UI for improved navigability and ease of use.
         </Text>
+        <Button
+          mt={4}
+          bg="#D73F09"
+          color="white"
+          _hover={{ bg: 'darkgray' }}
+          onClick={() => window.location.href = '/technical'}
+        >
+          Explore the Code
+        </Button>
       </Box>
     </VStack>
   );

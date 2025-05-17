@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header */}
       <VStack bg="#303030" p={6} borderRadius="md" color="white" textAlign="center">
         <Heading>Quick Start Guide</Heading>
-        <Text fontSize="lg">Streamlined HDR image generation with Radiance tools</Text>
+        <Text fontSize="lg">Installing the tool and creating your first HDR image</Text>
       </VStack>
 
       {/* Install Dependencies */}
@@ -23,6 +23,15 @@ export default function Home() {
       <Box bg="white" p={6} borderRadius="md" boxShadow="md">
         <Heading size="md" mb={4}>Install Application</Heading>
         <Text>Run the HDRI Calibration Interface installer for your platform.</Text>
+        <Button
+          mt={4}
+          bg="#D73F09"
+          color="white"
+          _hover={{ bg: 'darkgray' }}
+          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool/releases', '_blank')}
+        >
+          Download Latest Release
+        </Button>
       </Box>
 
       {/* Configure Settings */}

@@ -12,6 +12,22 @@ export default function Technical() {
         <Text>Explore the architecture and design of the HDRI Calibration Interface.</Text>
       </Box>
       
+      {/* GitHub Repository Link */}
+      <Box bg="white" p={8} borderRadius="md" boxShadow="md">
+        <Heading size="lg" mb={4}>Source Code Available on GitHub</Heading>
+        <Text mb={4}>
+          The complete source code for the HDRI Calibration Tool is available on GitHub. 
+        </Text>
+        <Button
+          bg="#D73F09"
+          color="white"
+          _hover={{ bg: "darkgray" }}
+          onClick={() => window.open('https://github.com/radiantlab/HDRICalibrationTool', '_blank')}
+        >
+          View Repository
+        </Button>
+      </Box>
+      
       {/* Frontend */}
       <Box bg="white" p={8} borderRadius="lg" boxShadow="xl" mx="auto">
         <Heading size="lg" mb={6} textAlign="left">
